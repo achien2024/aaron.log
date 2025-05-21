@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Logs by Aaron
+    </title>
+
+    <link
+        rel = "stylesheet";
+        href = "CSS/blog_header.css"
+    >
+
+    <link   
+        rel = "stylesheet";
+        href = "CSS/blog_links.css"
+    >
+
+    <link
+        rel = "stylesheet";
+        href = "CSS/blog_contact.css"
+    >
+
+    <script src = "JS/hamburger.js" defer></script>
+
+</head>
+
+<body>
+    <!--header for the website-->
+    <div
+        class = "blog_header"
+    >
+        <div
+            class = "bh_left"
+        >
+            <img
+                class = "image"
+                src = 'main_imgs/log.png'
+            >
+            <p class = "name">
+                Aaron Chien
+            </p>
+        </div>
+        <div
+            class = "bh_mid"
+        >
+            <a
+                class = "home_links"
+                href = index.html
+            >
+                Aaron.log
+            </a>
+        </div>
+
+        <div
+            class = "bh_right"
+        >
+            <div class="bh_menu_icon" onclick="toggleMenu()">
+                &#9776;
+            </div>
+            <a
+                class = "home_links"
+                href = explore.html
+            >
+                Explore
+            </a>
+
+            <a
+                class = "home_links"
+                href = links.html
+            >
+                Links
+            </a>
+        </div>    
+    </div>
+    
+    <!-- Full-screen mobile menu overlay -->
+    <div id="mobileMenu" class="mobile_menu_overlay" onclick="closeMenu(event)">
+        <div class="mobile_menu_links">
+            <a href="HTML/explore.html">Explore</a>
+            <a href="HTML/links.html">Links</a>
+        </div>
+    </div>
+
+    <div
+        class = "content"
+    > <!-- temporary solution, make sure to print and study, explore has class = content too -->
+        <div
+            class = "links"
+        >
+            <a
+                href = https://secure.actblue.com/donate/2301_website_blm_gnf?refcode=2024_top_right_main_nav_new&_gl=1*g49ces*_gcl_au*ODEyMjY2MzMzLjE3NDU5NjQzOTE.
+                class = "bubble"
+                target = "_blank"
+            >
+                Black Lives Matter
+            </a>
+            <a
+                href = https://stopaapihate.org/donate/
+                class = "bubble"
+                target = "_blank"
+            >
+                Stop Asian Hate
+            </a>
+            <a
+                href = https://irusa.org/middle-east/palestine/
+                class = "bubble"
+                target = "_blank"
+            >
+                Free Palestine
+            </a>
+
+        </div>
+    </div>
+
+    <div
+        class = "contact"
+    >
+        <p>
+            Follow Me
+        </p>
+        <div class="contact_links">
+            <a href="https://www.instagram.com/hongdou.cr2/" target="_blank">
+                <img src="main_imgs/instagram.png">
+            </a> <!-- instagram -->
+        
+            <a href="https://www.linkedin.com/in/aaron-chien/" target="_blank">
+                <img src="main_imgs/linkedin.png">
+            </a> <!-- linkedin -->
+        
+            <a href="https://bsky.app/profile/aaronchien.bsky.social" target="_blank">
+                <img src="main_imgs/bluesky.png">
+            </a> <!-- bluesky -->
+        </div>
+    </div>
+</body>
