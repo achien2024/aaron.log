@@ -1,0 +1,150 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+.bh_menu_icon {
+    display: none;
+    font-size: 8vw;
+    color: #333;
+    cursor: pointer;
+}
+
+/* Fullscreen overlay menu */
+.mobile_menu_overlay {
+    display: none;
+    position: fixed;
+
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 999;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.mobile_menu_links {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+
+.mobile_menu_links a {
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+@font-face 
+{
+    font-family: CarlSans;
+    src: url('/other/carla-sans-regular.ttf') format('truetype');
+}
+
+@media (max-width: 600px) {
+    .image {
+        width: 12vw;
+        height: auto;
+        max-height: 6vh;
+    }
+
+    .name {
+        display: none !important;
+    }
+
+    .bh_right a {
+        display: none !important;
+    }
+
+    .bh_menu_icon {
+        display: flex !important;
+    }
+
+    .blog_header {
+        padding: 0 4vw;
+    }
+}
+
+.blog_header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #87CEFA;
+
+    height: 8vh;
+    width: auto;
+    position: fixed;
+    top: 20px;
+    left: 10px;
+    right: 10px;
+
+    z-index: 100;
+    padding: 0 3vw;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+    flex-wrap: nowrap;
+    min-width: 0;
+}
+
+.bh_left,
+.bh_right {
+    display: flex;
+    align-items: center;
+    gap: 1vw; /* controls spacing between children */
+}
+
+.bh_left p,
+.bh_right a {
+    font-size: clamp(15px, 3vh, 20px); 
+}
+
+.bh_mid {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    justify-content: center;
+}
+
+.bh_mid a {
+    font-family: CarlSans;
+    font-size: clamp(18px, 4vh, 32px);
+
+    text-decoration: none;
+    color: #333;
+}
+
+.image
+{
+    width: auto;
+    height: 10vh;
+    min-height: 50px;
+
+    margin-left: -2vw;
+    margin-top: 5px;
+}
+
+.home_links
+{
+    cursor: pointer;
+    color: inherit;
+    text-decoration: none;
+}
+
+.home_links:visited
+
+{
+    color: inherit; /* or pick your desired color */
+    text-decoration: none; /* optional: remove underline */
+}
+
+.home_links:hover
+{
+    color: #ead5c6;
+    transition-duration: 0.5s;
+}

@@ -1,0 +1,48 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* ensures it fills the viewport height */
+    margin: 0;
+}
+
+.content {
+    flex-grow: 1;
+}
+
+.contact
+{
+    position: sticky;
+    
+    display: flex;
+    
+    background-color: black;
+
+    margin-top: 40px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px 50px;
+
+    box-sizing: border-box;
+}
+
+.contact_links
+{
+    display: flex;
+    justify-content: space-evenly;
+    width: 300px;
+}
+
+.contact p
+{
+    color: white;
+    font-size: 30px;
+}
+
+.contact_links img
+{
+    width: 50px;
+}
+
+

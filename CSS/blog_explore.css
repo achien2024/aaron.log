@@ -1,0 +1,133 @@
+@media (max-width: 900px)
+{
+    .pages{
+        display: grid !important;
+        grid-template-columns: 1fr 1fr !important;
+        gap: 20px;
+        column-gap: 1px;
+    }
+
+    .read_button {
+        width: 100%;
+        max-width: 200px;
+        height: auto;
+        margin: 0 auto;
+    }
+}
+
+.searchbar
+{
+    position: fixed; /* This makes the search bar stay fixed on the screen */
+    top: 85px; /* Adjust this based on your header height */
+    left: 50%;
+    transform: translateX(-50%); /* This centers the search bar horizontally */
+    z-index: 998; /* Ensures it's on top of other content */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%; /* Optional: makes the search bar full-width */
+    background-color: white; /* Optional: gives the search bar a background */
+    padding: 15px 0; /* Adjust the vertical padding */
+    
+}
+
+.bar 
+{
+    width: 35%;
+    height: 5vh;
+
+    border-radius: 999px;         /* makes it pill-shaped */
+    border: 1px solid #ccc;       /* optional: subtle border */
+    padding: 0 20px;              /* space inside left/right */
+    font-size: 1rem;              /* make text readable */
+    outline: none;                /* remove blue highlight on focus */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.pages
+{
+    margin-top: 170px;
+
+    justify-items: center; /* justify-content aligns the entire grid as a block to center */ 
+    /* justify-items aligns everything inside the grid horizontally */
+    align-items: center;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-evenly;
+
+    row-gap: 20px;
+}
+
+.read_button
+{
+    cursor: pointer;
+    
+    text-decoration: none;
+
+    position: relative;
+    width: 350px;
+    height: 250px;
+    overflow: hidden;
+}
+
+.read_button img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.overlay
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
+    color: white;
+    transition: 0.3s;
+}
+
+.title 
+{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 10px;
+    font-size: 30px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+
+    opacity: 1;
+}
+
+.readnow 
+{
+    position: absolute; 
+    top: 35%;
+    left: 50%;
+    opacity: 0;
+    font-weight: bold;
+    font-size: 30px;
+    transition: 0.3s;
+
+    transform: translate(-50%, -50%);
+}
+
+/* Hover effect */
+.read_button:hover img {
+    opacity: 0.4;
+}
+
+.read_button:hover .readnow {
+    opacity: 1;
+}
+
+.read_button:hover .title
+{
+    opacity: 0;
+}

@@ -1,0 +1,48 @@
+.article
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 100px auto 0 auto;
+
+    aspect-ratio: 16 / 9;
+    max-width: 800px;
+    overflow: hidden;
+}
+
+.article_img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.blog 
+{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+
+    margin-left: 50px;
+    padding-left: 50px;
+    margin-right: 50px;
+    padding-right: 50px;
+    margin-top: 30px;
+
+    background-color: antiquewhite;
+
+    font-size: 20px;
+
+    flex-wrap: wrap;
+    /* make the text wrap around and go to the next line */ 
+}
+
+.blog img
+{
+    width: 50%;
+    display: block;
+    margin: 30px auto;         /* centers image horizontally + adds spacing */
+    object-fit: cover;         /* optional: ensures image fills nicely */
+    border-radius: 10px;  
+}
