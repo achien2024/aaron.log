@@ -42,7 +42,7 @@ html, body {
 @font-face 
 {
     font-family: CarlSans;
-    src: url('carla-sans-regular.ttf') format('truetype');
+    src: url('/carla-sans-regular.ttf') format('truetype');
 }
 
 @media (max-width: 600px) {
