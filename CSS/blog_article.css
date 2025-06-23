@@ -1,0 +1,66 @@
+.article
+{
+    display: flex; /* makes article element a flexbox */
+    flex-direction: column; /* all elements in the flex-box flows column-wise */
+    align-items: center; /* centers it, only works for flex-box */
+    margin: 100px auto 0 auto; /* top right bottom left */ 
+
+    aspect-ratio: 16 / 9; /* determines length and width, 16 to 9 for width to height */ 
+    max-width: 800px; /* automatically control the size of the div, but cap it at 800px */
+    overflow: hidden; /* no horizontal scrolling */
+}
+
+.article_img
+{
+    width: 100%; /* take up the entire div (.article) */
+    height: 100%;
+    object-fit: cover; /* object-fit is for img or video, cover makes it fill up the space, crop it if needed */
+    object-position: center; 
+}
+
+.blog 
+{
+    display: flex; /* flex box for the blog content itself */
+    justify-content: flex-start; /* align all elements to the start of the container */
+    flex-direction: column; /* items flow column-wise, so goes from top-bottom */
+
+    margin-left: 50px;
+    padding-left: 50px;
+    margin-right: 50px;
+    padding-right: 50px;
+    margin-top: 30px;
+    padding: 1rem;
+
+    background-color: antiquewhite;
+
+    font-size: 20px;
+
+    flex-wrap: wrap;
+    /* make the text wrap around and go to the next line */ 
+}
+
+.blog img
+{
+    min-width: 300px;
+    width: 50%;
+    display: block; /* makes it take up an entire line */ 
+    margin: 30px auto;         /* centers image horizontally + adds spacing */
+    object-fit: cover;         /* optional: ensures image fills nicely */
+    border-radius: 10px;  
+}
+
+ul 
+{
+    max-width: 100%;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+    hyphens: auto;
+    padding-right: 1rem; /* optional, for breathing room */
+}
+  
+li 
+{
+    margin-bottom: 0.5rem;
+}
+  
