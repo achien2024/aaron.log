@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- applies the same viewing dimensions for each device/windows -->
+
+    <!-- website name -->
+
+    <title>
+        Logs by Aaron
+    </title>
+
+    <link
+        rel = "stylesheet";
+        href = "CSS/blog_header.css"
+    >
+
+    <link
+        rel = "stylesheet";
+        href = "CSS/blog_contact.css"
+    >
+
+    <link
+        rel = "stylesheet";
+        href = "CSS/blog_article.css"
+    >
+
+    <script src = "JS/hamburger.js" defer></script>
+</head>
+
+<body>
+    <!-- header for the website -->
+    <!-- bh_left bh_mid bh_right -->
+    <!-- bh_left - image Aaron Chien -->
+    <!-- bh_mid - Aaron.log -->
+    <!-- bh_right - bh_menu_icon explore links -->
+    <div
+        class = "blog_header"
+    >
+        <div
+            class = "bh_left"
+        >
+            <img
+                class = "image"
+                src = 'main_imgs/log.png'
+            >
+            <p class = "name">
+                Aaron Chien
+            </p>
+        </div>
+        <div
+            class = "bh_mid"
+        >
+            <a
+                class = "home_links"
+                href = index.html
+            >
+                Aaron.log
+            </a>
+        </div>
+
+        <div
+            class = "bh_right"
+        >
+            <!-- code to create a hamburger link logo -->
+            <!-- using div instead of button for more styling freedom -->
+            <div 
+                class="bh_menu_icon"
+                onclick="toggleMenu()"
+            >
+                &#9776;
+            </div>
+            <a
+                class = "home_links"
+                href = explore.html
+            >
+                Explore
+            </a>
+
+            <a
+                class = "home_links"
+                href = links.html
+            >
+                Links
+            </a>
+        </div>    
+    </div>
+    
+    <!-- Full-screen mobile menu overlay -->
+    <!-- mobileMenu -->
+    <!-- mobileMenu - mobile_menu_links -->
+    <!-- mobile_menu_links - explore links -->    
+    <div 
+        id="mobileMenu" 
+        class="mobile_menu_overlay" 
+        onclick="closeMenu(event)"
+    >
+        <div class="mobile_menu_links">
+            <a href=explore.html>Explore</a>
+            <a href=links.html>Links</a>
+        </div>
+    </div>
+
+    <!-- content for blog site -->
+    <!-- content -->
+    <!-- content - article blog blog -->
+    <!-- article - img -->
+    <!-- blog - p p img p... each p is a new line/paragraph -->
+    <!-- blog - p p p... each p is a work cited line -->
+    <div
+        class = "content"
+    >
+        <div
+            class = "article"
+        > <!-- center this later -->
+            <img class = "article_img" src = "blog3/ewtrump.webp">
+        </div>
+
+        <div
+            class = "blog"
+        >
+            <p>
+                DATE: 2025-06-22
+            </p>
+
+            <p>
+                Trump, Tariffs, Toil and Trouble 
+            </p>
+
+            <p>
+                Double, double toil and trouble;<br>
+                Fire burn and caldron bubble.<br>
+                Fillet of a fenny snake,<br>
+                In the caldron boil and bake;<br>
+                Eye of newt and toe of frog,
+            </p>
+            
+	        <p>
+                From Shakespeare’s Macbeth, a group of witches huddle around a pot, speaking in an occult tongue, creating a charm for chaos. I never saw or read Macbeth, but I needed something with oil and t, which came toil, and then trouble.            
+            </p>
+
+            <p>
+                Ironic how the Trump presidency huddled around an oval table, speaking in gibberish, creating policies for chaos. Instead of black and sharp hats, we have blood-red and cheap caps. 
+            </p>
+
+            <img src = "blog3/witches.webp">
+
+            <p>
+                One of my goals is to keep myself accountable with economic and political events, using my degree while I study to become an actuary. On June 17-18, 2025, the Federal Reserve Board (FED) had its monthly meeting. They reported positive economic signs:
+              </p>
+              
+              <ul>
+                <li>Predicted GDP growth of 2%</li>
+                <li>Unemployment rate at 4%</li>
+                <li>Inflation at 2%</li>
+                <li>Federal funds rate set to be maintained at 4.25–4.50%</li>
+              </ul>
+              
+              <p>
+                Total neutrality, a positive sign. On June 21, 2025, Trump bombed Iran, showing his alliance with Israel and declaring war through action. I refuse to be a soldier for a leader I don’t respect, trust, or hold any high esteem. In the months to come, we will see how this will change, for better or for worse, probably worse.
+              </p>
+
+            <p>
+                To assess the potential damage in the coming months, two key components must be considered: GDP and tariffs. But what is GDP? Gross Domestic Product, at its most basic level, measures the total value of consumable output produced, adjusted for real dollar value. Why is this important? Tariffs directly affect both production and consumption, making GDP a critical metric for understanding the broader economic impact.
+            </p>
+
+	        <p>
+                GDP = Consumption + Investment + Government Spending + (Exports - Imports) 
+            </p>
+
+	        <p>
+                If you never took an economics class, investment isn’t what you think it is. The only variable to focus on in this blog is net exports (exports - imports). 
+            </p>
+
+	        <p>
+                What exactly are Trump’s tariff policies?  Besides my asian skincare products getting taxed more, and clowns on Twitter/Instagram saying there aren’t any impacts, it’s about the wider economic effect and how Trump came up with his equation.
+            </p>
+
+            <img src = blog3/trumptariff.png>
+
+            <p>
+                Here is a screenshot of the tariff equation provided by the USTR.gov site. 
+            </p>
+
+            <img src = blog3/equation.png>
+
+            <p>
+                And another screenshot for my helpful diagram,
+            </p>
+
+            <img src = blog3/diagram.png>
+
+            <p>
+                To summarize this entire thing with my bachelor’s degree in business economics, the tariff equation is just:
+            </p>
+
+            <img src = blog3/tariff.png>
+
+            <p>
+                The variable that alarmed me the most is epsilon, the e-looking symbol. This is the elasticity of imports with respect to import prices, represented as a constant less than 0 (so negative).
+            </p>
+
+            <p>
+                The variable that alarmed me the most is epsilon, the e-looking symbol. This is the elasticity of imports with respect to import prices, represented as a constant less than 0 (so negative).
+              </p>
+              
+              <p>The rules of elasticity in terms of economics can be noted as:</p>
+              
+              <ul>
+                <li>If it’s between 0 and 1, you are more inelastic, i.e., less likely to buy less if prices were to increase. Think gas, medicine, electricity, bread.</li>
+                <li>If it’s greater than 0, you are elastic, i.e., more likely to buy less if prices were to increase. Think clothes, games, rave tickets.</li>
+                <li>Elasticity with respect to prices is almost always negative. No sound consumer would buy more of something when the price goes up.</li>
+                <li>Elasticity with respect to another good can be positive or negative, but that affects demand and supply, not prices.</li>
+              </ul>
+              
+              <p>
+                So, if we have an inelastic product, that value is between 0 and 1, and it’s in the denominator of the equation. Imagine, in one scenario, that you are heavily dependent on this product, represented as 1/50, then the tariff change results in a positive increase of 50.
+              </p>
+              
+              <p>
+                In Q1 2025, the FED reported -1,267 billion dollars in net exports (FRED). That’s a lot of imports. Oil is one of the most inelastic products and made up about 18% of total imports in 2023 (EIA), and we import from Canada, Mexico, Saudi Arabia, Iraq, and Brazil (EIA).
+              </p>
+              
+              <img src = blog3/FED.webp>
+
+              <p>
+                There’s no sound reason why the reciprocal of elasticity should be factored into the equation; in fact, it should be in the numerator if at all. Why on earth would we make something we need more expensive? This doesn’t benefit the economy; it’s an import. This robs the working class, and big oil businesses get a quicker buck.
+              </p>
+              
+              <p>
+                On Saturday, June 21, 2025, Trump issued an attack on Iran, bombing nuclear sites in Fordo, Natanz, and Isfahan. This was in retaliation for Iran defending itself from Israel after being bombed. The US is now at war; the cauldron has bubbled over.
+              </p>
+              
+              <img src = blog3/bomber.jpg>
+
+              <p>
+                Iran has now voted to close the Strait of Hormuz on June 22, 2025, which holds ⅕ of the entire global oil supply. Prepare for economic turmoil, with tariffs and now the oil supply chain being cut off, the next few months will be sensitive, crucial, and will have me on the edge of my seat.
+              </p>
+
+              <img src = blog3/hormuz.avif>
+              
+        </div>
+
+        <div
+            class = "blog"
+        >
+            <ul>
+                <li><strong>Federal Reserve Board.</strong> “Federal Reserve Issues FOMC Statement.” <em>Federal Reserve</em>, 18 June 2025, <a href="https://www.federalreserve.gov/newsevents/pressreleases/monetary20250618a.htm" target="_blank" rel="noopener noreferrer">www.federalreserve.gov/newsevents/pressreleases/monetary20250618a.htm</a>.</li>
+                <li><strong>Federal Reserve Board.</strong> “Federal Reserve Issues Statement on Longer-Run Goals and Monetary Policy Strategy.” <em>Federal Reserve</em>, 18 June 2025, <a href="https://www.federalreserve.gov/newsevents/pressreleases/monetary20250618b.htm" target="_blank" rel="noopener noreferrer">www.federalreserve.gov/newsevents/pressreleases/monetary20250618b.htm</a>.</li>
+                <li><strong>Office of the United States Trade Representative.</strong> “Reciprocal Tariff Calculations.” <em>USTR</em>, <a href="https://ustr.gov/sites/default/files/files/Issue_Areas/Presidential%20Tariff%20Action/Reciprocal%20Tariff%20Calculations.pdf" target="_blank" rel="noopener noreferrer">ustr.gov/sites/default/files/files/Issue_Areas/Presidential%20Tariff%20Action/Reciprocal%20Tariff%20Calculations.pdf</a>.</li>
+                <li><strong>U.S. Energy Information Administration.</strong> “Imports and Exports.” <em>EIA</em>, <a href="https://www.eia.gov/energyexplained/us-energy-facts/imports-and-exports.php?utm_source=chatgpt.com" target="_blank" rel="noopener noreferrer">www.eia.gov/energyexplained/us-energy-facts/imports-and-exports.php</a>.</li>
+                <li><strong>U.S. Energy Information Administration.</strong> “How Much Petroleum Does the United States Import and Export?” <em>EIA</em>, <a href="https://www.eia.gov/tools/faqs/faq.php?id=727&t=6&utm_source=chatgpt.com" target="_blank" rel="noopener noreferrer">www.eia.gov/tools/faqs/faq.php?id=727&amp;t=6</a>.</li>
+                <li><strong>Federal Reserve Economic Data.</strong> “Net Exports of Goods and Services.” <em>FRED</em>, <a href="https://fred.stlouisfed.org/series/NETEXP" target="_blank" rel="noopener noreferrer">fred.stlouisfed.org/series/NETEXP</a>.</li>
+                <li><strong>Franck, Thomas.</strong> “Trump’s Israel-Iran Conflict Escalation.” <em>CNBC</em>, 21 June 2025, <a href="https://www.cnbc.com/2025/06/21/trump-israel-iran-conflict.html" target="_blank" rel="noopener noreferrer">www.cnbc.com/2025/06/21/trump-israel-iran-conflict.html</a>.</li>
+                <li><strong>Rapier, Robert.</strong> “The Strait of Consequences: World Braces for Potential Energy Shock.” <em>Forbes</em>, 22 June 2025, <a href="https://www.forbes.com/sites/rrapier/2025/06/22/the-strait-of-consequences-world-braces-for-potential-energy-shock/" target="_blank" rel="noopener noreferrer">www.forbes.com/sites/rrapier/2025/06/22/the-strait-of-consequences-world-braces-for-potential-energy-shock/</a>.</li>
+            </ul>          
+        </div>
+    </div>
+
+    <!-- contact links -->
+    <!-- follow me contact_links -->
+    <!-- contact_links - insta linkedin bluesky-->
+    <div
+        class = "contact"
+    >
+        <p>
+            Follow Me
+        </p>
+        <div class="contact_links">
+            <a 
+                href="https://www.instagram.com/hongdou.cr2/" 
+                target="_blank"
+            >
+                <img src="main_imgs/instagram.png">
+            </a> <!-- instagram -->
+        
+            <a 
+                href="https://www.linkedin.com/in/aaron-chien/" 
+                target="_blank"
+            >
+                <img src="main_imgs/linkedin.png">
+            </a> <!-- linkedin -->
+        
+            <a 
+                href="https://bsky.app/profile/aaronchien.bsky.social" 
+                target="_blank"
+            >
+                <img src="main_imgs/bluesky.png">
+            </a> <!-- bluesky -->
+        </div>
+    </div>
+</body>
