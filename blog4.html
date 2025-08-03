@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- applies the same viewing dimensions for each device/windows -->
+
+    <!-- website name -->
+
+    <title>
+        Logs by Aaron
+    </title>
+
+    <link
+        rel = "stylesheet";
+        href = "CSS/blog_header.css"
+    >
+
+    <link
+        rel = "stylesheet";
+        href = "CSS/blog_contact.css"
+    >
+
+    <link
+        rel = "stylesheet";
+        href = "CSS/blog_article.css"
+    >
+
+    <script src = "JS/hamburger.js" defer></script>
+</head>
+
+<body>
+    <!-- header for the website -->
+    <!-- bh_left bh_mid bh_right -->
+    <!-- bh_left - image Aaron Chien -->
+    <!-- bh_mid - Aaron.log -->
+    <!-- bh_right - bh_menu_icon explore links -->
+    <div
+        class = "blog_header"
+    >
+        <div
+            class = "bh_left"
+        >
+            <img
+                class = "image"
+                src = 'main_imgs/log.png'
+            >
+            <p class = "name">
+                Aaron Chien
+            </p>
+        </div>
+        <div
+            class = "bh_mid"
+        >
+            <a
+                class = "home_links"
+                href = index.html
+            >
+                Aaron.log
+            </a>
+        </div>
+
+        <div
+            class = "bh_right"
+        >
+            <!-- code to create a hamburger link logo -->
+            <!-- using div instead of button for more styling freedom -->
+            <div 
+                class="bh_menu_icon"
+                onclick="toggleMenu()"
+            >
+                &#9776;
+            </div>
+            <a
+                class = "home_links"
+                href = explore.html
+            >
+                Explore
+            </a>
+
+            <a
+                class = "home_links"
+                href = links.html
+            >
+                Links
+            </a>
+        </div>    
+    </div>
+    
+    <!-- Full-screen mobile menu overlay -->
+    <!-- mobileMenu -->
+    <!-- mobileMenu - mobile_menu_links -->
+    <!-- mobile_menu_links - explore links -->    
+    <div 
+        id="mobileMenu" 
+        class="mobile_menu_overlay" 
+        onclick="closeMenu(event)"
+    >
+        <div class="mobile_menu_links">
+            <a href=explore.html>Explore</a>
+            <a href=links.html>Links</a>
+        </div>
+    </div>
+
+    <!-- content for blog site -->
+    <!-- content -->
+    <!-- content - article blog blog -->
+    <!-- article - img -->
+    <!-- blog - p p img p... each p is a new line/paragraph -->
+    <!-- blog - p p p... each p is a work cited line -->
+    <div
+        class = "content"
+    >
+        <div
+            class = "article"
+        > <!-- center this later -->
+            <img class = "article_img" src = "blog4/opentonetwork.png">
+        </div>
+
+        <div
+            class = "blog"
+        >
+            <p>
+                DATE: 2025-07-30
+            </p>
+
+            <p>
+                Unemployment, Myth?  
+            </p>
+
+            <p>
+                The FOMC meeting on 07/30/2025 have concluded on these points:
+                <li> the federal interest rate remains unchanged at 4.25% - 4.5% </li>
+                <li> inflation is steady at 2% </li>
+                <li> the unemployment rate is low at 4.1% </li>
+            </p>
+
+            <p>
+                Interesting points from the meeting is that Powell stated that the labor market is balanced. Although there are less job openings, there are also a decrease in labor supply. People who have exited the labor market. There hasn't been any observed real impact from the tariffs, but Powell and the economic team will take the 
+                two months of data to see if there is an updated effect in September 2025.
+            </p>
+            
+	        <p>
+                Lays, freezies, and Reese’s - All amazing snacks I had as a child. As an adult, I only consume media about layoffs, hiring freezes, and mass rejections. This is the trend I’m shown, but my closest friends all have wonderful, thriving careers. Which begs me to ask if there are gaps in the data being presented.
+            </p>
+
+            <p>
+                To explore this, I gathered data from the Bureau of Labor Statistics on the sectors of Leisure and Hospitality, Education and Healthcare, Professional and Business, and Financial Activities.
+            </p>
+
+            <p>
+                Leisure and Hospitality includes arts, recreation, and entertainment. This works with accommodation, lodging, serving, anything to do with customer service, or performing, curating, and presenting.                 
+            </p>
+
+	        <p>
+                Education and Healthcare include instructors in schools, universities, and/or training centers, and healthcare and social assistance, such as health practitioners and social workers. 
+            </p>
+
+	        <p>
+                Professional and Business careers involve high expertise. Think lawyers, accountants, managers, etc. It’s not only business/finance, it includes engineering, computer services, etc. Anything that needs a degree and some extra exams/license could be included.
+            </p>
+
+	        <p>
+                Financial Activities are careers in sales, real estate, customer service, and insurance. They don’t require as much education or training as Professional and Business, which is where the clear distinction lies.  
+            </p>
+
+            <p>
+                As a college graduate pursuing an actuarial path, I wanted to explore Professional and Business, denoted as BP going forward, compared to the FRED’s data on 25 years and older, and the college-educated unemployment rate. 
+            </p>
+
+            <img src = blog4/BP_ur.png>
+
+            <p>
+                From the unemployment rate graph, we can see that BP doesn’t differ from the unemployment rate by more than 2.5%, but averages higher than the total unemployment rate. The noticeable outlier is during the 2020 COVID-19 pandemic, where BP fell below the unemployment rate. A sign indicating that during times of recession, this industry may be relatively safe.
+            </p>
+
+            <p>
+                Safety is always one of my biggest considerations when making a decision. How much risk am I allowing if I make a decision, and what is the worst-case scenario? Using the risk ratio, we can see how much risk it is to pursue one industry compared to the rest. 
+            </p>
+
+            <img src = blog4/BP_rr.png>
+
+            <p>
+                From 2015, BP had a relatively higher risk and chance of unemployment, but as time has passed, the risk has significantly dropped from 2 to 1, an entire unit down. Additionally, the lowest point it reached was in 2020. 
+            </p>
+
+            <img src = blog4/BP_vol.png>
+
+            <p>
+                Volatility is noisy, harder to spot a trend. Gathering from this, it seems that BP is a relatively safe industry from unemployment and continues to grow in safety, but there would be periods of higher unemployment than before, which can be harder to predict/spot, but overall lower than years before. 
+            </p>
+
+            <p>
+                In conclusion, I am safe with my goals in becoming an actuary. But my friends and peers aren’t all in this BP category. For their own personal data exploration, I included visuals on the different sectors as well. 
+            </p>
+            
+            <img src = blog4/sec_ur.png>
+
+            <p>
+                Leisure and hospitality face significantly higher unemployment rates than the overall unemployment rate, while healthcare, education, and financial services closely follow the rate. Healthcare and education are volatile, facing spikes of unemployment seasonally during the summer months. This is due in part to summer vacation, where schools do not need much staffing during the long break. 
+            </p>
+
+            <img src = blog4/sec_rr.png>
+
+            <p>
+                Examining the risk ratios, we can see this follows the unemployment rate for each sector, where leisure showcases the highest risk, healthcare and education spikes in unemployment, and face more volatility, while financial is the most secure. To provide a more numerical measure of risk, here is the standard deviation of the unemployment rate for each sector. The higher the number, the greater the risk:
+                <li> financial	0.007298239 </li>
+                <li> healthcare and education	0.022415791 </li>
+                <li> leisure and hospitality    0.053431118</li>
+            </p>
+        </div>
+
+        <div
+            class = "blog"
+        >
+            <ul>
+                <li><strong>Federal Reserve Economic Data.</strong> “Commercial Bank Deposits: Large Domestically Chartered Commercial Banks.” <em>FRED</em>, <a href="https://fred.stlouisfed.org/series/CGBD2534" target="_blank" rel="noopener noreferrer">fred.stlouisfed.org/series/CGBD2534</a>.</li>
+                <li><strong>Federal Reserve Board.</strong> “News and Events.” <em>Federal Reserve</em>, <a href = "https://www.federalreserve.gov/newsevents.htm." target = "_blank"> https://www.federalreserve.gov/newsevents.htm. </a></li>
+                <li><strong>U.S. Bureau of Labor Statistics.</strong> “Financial Activities.” <em>BLS</em>, <a href="https://www.bls.gov/iag/tgs/iag60.htm" target="_blank" rel="noopener noreferrer">www.bls.gov/iag/tgs/iag60.htm</a>.</li>
+                <li><strong>U.S. Bureau of Labor Statistics.</strong> “Professional and Business Services.” <em>BLS</em>, <a href="https://www.bls.gov/iag/tgs/iag50.htm" target="_blank" rel="noopener noreferrer">www.bls.gov/iag/tgs/iag50.htm</a>.</li>
+                <li><strong>U.S. Bureau of Labor Statistics.</strong> “Education and Health Services.” <em>BLS</em>, <a href="https://www.bls.gov/iag/tgs/iag65.htm" target="_blank" rel="noopener noreferrer">www.bls.gov/iag/tgs/iag65.htm</a>.</li>
+                <li><strong>U.S. Bureau of Labor Statistics.</strong> “Leisure and Hospitality.” <em>BLS</em>, <a href="https://www.bls.gov/iag/tgs/iag70.htm" target="_blank" rel="noopener noreferrer">www.bls.gov/iag/tgs/iag70.htm</a>.</li>
+            </ul>          
+        </div>
+    </div>
+
+    <!-- contact links -->
+    <!-- follow me contact_links -->
+    <!-- contact_links - insta linkedin bluesky-->
+    <div
+        class = "contact"
+    >
+        <p>
+            Follow Me
+        </p>
+        <div class="contact_links">
+            <a 
+                href="https://www.instagram.com/hongdou.cr2/" 
+                target="_blank"
+            >
+                <img src="main_imgs/instagram.png">
+            </a> <!-- instagram -->
+        
+            <a 
+                href="https://www.linkedin.com/in/aaron-chien/" 
+                target="_blank"
+            >
+                <img src="main_imgs/linkedin.png">
+            </a> <!-- linkedin -->
+        
+            <a 
+                href="https://bsky.app/profile/aaronchien.bsky.social" 
+                target="_blank"
+            >
+                <img src="main_imgs/bluesky.png">
+            </a> <!-- bluesky -->
+        </div>
+    </div>
+</body>
