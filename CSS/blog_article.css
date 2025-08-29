@@ -69,3 +69,14 @@ li
     margin-bottom: 0.5rem;
 }
   
+.blog pre 
+{
+    white-space: pre-wrap;   /* wraps long lines */
+    word-wrap: break-word;
+}
+
+.blog a 
+{
+    word-break: break-word;
+    overflow-wrap: break-word;
+}
