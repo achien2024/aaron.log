@@ -1,11 +1,12 @@
 html, body {
-    margin: 0;
-    padding: 0;
+    margin: 0; /* change default margin to 0, all html bodies will be 0 margin away from edge */
+    padding: 0; /* change padding as well, so elements are still away from edge */ 
     overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
 .bh_menu_icon {
-    display: none;
+    display: none; /* make this class basically disappear, so now it's <!-- bh_right explore links --> */
+    /* instead of <!-- bh_right bh_menu_icon explore links --> */ 
     font-size: 8vw;
     color: #333;
     cursor: pointer;
@@ -13,73 +14,70 @@ html, body {
 
 /* Fullscreen overlay menu */
 .mobile_menu_overlay {
-    display: none;
-    position: fixed;
+    display: none; /* make this class disappear */
+    position: fixed; /* sticks in the viewpoint, even when you scroll */ 
 
-    width: 100vw;
+    width: 100vw; /* length of the overlay to cover the entire screen */
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.9);
-    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.9); /* black rgb (0 0 0) opacity 0.9 */
+    z-index: 999; /* stay on top of all the elements */
 
-    justify-content: center;
-    align-items: center;
+    justify-content: center; /* horizontally centers */
+    align-items: center; /* vertically centers */
+    /* centers the mobile_menu_links block in the middle of the page */
 }
 
 .mobile_menu_links {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    align-items: center;
+    display: flex; 
+    flex-direction: column; /* only works with display: flex */
+    gap: 30px; /* gives 30ox spacing between each element in the div (<p>) */
+    align-items: center; /* vertically centers the <p> elements */
 }
 
 .mobile_menu_links a {
     color: white;
     font-size: 28px;
     font-weight: bold;
-    text-decoration: none;
+    text-decoration: none; /* removes any text decorations as it's a link, so the underline goes away */
 }
 
 @font-face 
 {
     font-family: CarlSans;
-    src: url('carla-sans-regular.ttf') format('truetype');
+    src: url('/other/carla-sans-regular.ttf') format('truetype');
 }
 
-@media (max-width: 600px) {
+@media (max-width: 600px) { /* changes when the viewport is 600px or smaller (mobile devices or small views) */
     .image {
-        width: 12vw;
-        height: auto;
-        max-height: 6vh;
+        width: auto;
+        height: 6vh;
     }
 
     .name {
-        display: none !important;
+        display: none !important; /* gets rid of Aaron Chien in the header, !important overrides any CSS preventing that */
     }
 
     .bh_right a {
-        display: none !important;
+        display: none !important; /* get rid of explore and links */
     }
 
     .bh_menu_icon {
-        display: flex !important;
-    }
-
-    .blog_header {
-        padding: 0 4vw;
+        display: flex !important; /* makes the hamburger menu icon appear instead */
     }
 }
 
 .blog_header
 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: flex; /* flexbox */
+    justify-content: space-between; /* evenly space bh_left bh_right bh_left */
+    /* justify-content only works with display: flex */
+    align-items: center; /* aligns vertically */
     background-color: #87CEFA;
 
     height: 8vh;
     width: auto;
-    position: fixed;
-    top: 20px;
+    position: fixed; /* make it there even as i scroll */ /* ignores parents and any other sub-elements */
+    top: 20px; /* position from viewport, works only with position: fixed */
     left: 10px;
     right: 10px;
 
@@ -88,27 +86,26 @@ html, body {
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 
-    flex-wrap: nowrap;
-    min-width: 0;
+    flex-wrap: nowrap; /* no horizontal scrolling */ 
 }
 
 .bh_left,
 .bh_right {
-    display: flex;
-    align-items: center;
+    display: flex; /* display: flex automatically align items horizontally */
+    align-items: center; /* vertically centers */
     gap: 1vw; /* controls spacing between children */
 }
 
 .bh_left p,
 .bh_right a {
-    font-size: clamp(15px, 3vh, 20px); 
+    font-size: clamp(15px, 3vh, 20px);  /* min font size, try to make it 3vh font size, max font size */
 }
 
 .bh_mid {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    justify-content: center;
+    position: absolute; /* position element with respect to the parental container (bh_header) */
+    /* parental container needs to be position: fixed or position: relative for absolute to work */
+    left: 50%; /* makes it directly in the middle of the parental container */
+    transform: translateX(-50%); /* pulls it back 50%, making it centered */
 }
 
 .bh_mid a {
@@ -132,12 +129,10 @@ html, body {
 .home_links
 {
     cursor: pointer;
-    color: inherit;
     text-decoration: none;
 }
 
 .home_links:visited
-
 {
     color: inherit; /* or pick your desired color */
     text-decoration: none; /* optional: remove underline */

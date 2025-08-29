@@ -2,7 +2,9 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- applies the same viewing dimensions for each device/windows -->
 
+    <!-- website name -->
     <title>
         Logs by Aaron
     </title>
@@ -27,7 +29,11 @@
 </head>
 
 <body>
-    <!--header for the website-->
+    <!-- header for the website -->
+    <!-- bh_left bh_mid bh_right -->
+    <!-- bh_left - image Aaron Chien -->
+    <!-- bh_mid - Aaron.log -->
+    <!-- bh_right - bh_menu_icon explore links -->
     <div
         class = "blog_header"
     >
@@ -56,7 +62,12 @@
         <div
             class = "bh_right"
         >
-            <div class="bh_menu_icon" onclick="toggleMenu()">
+            <!-- code to create a hamburger link logo -->
+            <!-- using div instead of button for more styling freedom -->
+            <div 
+                class="bh_menu_icon" 
+                onclick="toggleMenu()"
+            >
                 &#9776;
             </div>
             <a
@@ -76,10 +87,17 @@
     </div>
     
     <!-- Full-screen mobile menu overlay -->
-    <div id="mobileMenu" class="mobile_menu_overlay" onclick="closeMenu(event)">
+    <!-- mobileMenu -->
+    <!-- mobileMenu - mobile_menu_links -->
+    <!-- mobile_menu_links - explore links -->    
+    <div 
+        id="mobileMenu" 
+        class="mobile_menu_overlay" 
+        onclick="closeMenu(event)"
+    >
         <div class="mobile_menu_links">
-            <a href="explore.html">Explore</a>
-            <a href="links.html">Links</a>
+            <a href=explore.html>Explore</a>
+            <a href=links.html>Links</a>
         </div>
     </div>
 
@@ -114,6 +132,9 @@
         </div>
     </div>
 
+    <!-- contact links -->
+    <!-- follow me contact_links -->
+    <!-- contact_links - insta linkedin bluesky-->
     <div
         class = "contact"
     >
@@ -121,15 +142,24 @@
             Follow Me
         </p>
         <div class="contact_links">
-            <a href="https://www.instagram.com/hongdou.cr2/" target="_blank">
+            <a 
+                href="https://www.instagram.com/achien.zip/" 
+                target="_blank"
+            >
                 <img src="main_imgs/instagram.png">
             </a> <!-- instagram -->
         
-            <a href="https://www.linkedin.com/in/aaron-chien/" target="_blank">
+            <a 
+                href="https://www.linkedin.com/in/aaron-chien/" 
+                target="_blank"
+            >
                 <img src="main_imgs/linkedin.png">
             </a> <!-- linkedin -->
         
-            <a href="https://bsky.app/profile/aaronchien.bsky.social" target="_blank">
+            <a 
+                href="https://bsky.app/profile/aaronchien.bsky.social" 
+                target="_blank"
+            >
                 <img src="main_imgs/bluesky.png">
             </a> <!-- bluesky -->
         </div>

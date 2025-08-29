@@ -1,13 +1,14 @@
-@media (max-width: 600px)
+@media (max-width: 600px) /* changes when the viewport gets 600px or smaller */ 
 {
     .latest{
-        flex-direction: column;
+        flex-direction: column; /* changes flex direction to column */
         gap: 20px;
     }
 
     .latest_button
     {
         max-width: 400px; /* still limits it on larger screens */
+        /* makes the entier div 400px wide */
     }
 }
 
@@ -34,7 +35,7 @@
     margin-top: 45px;
 
     display: flex;
-    align-items: center;
+    align-items: center; /* aligns vertically */ 
     justify-content: space-evenly;
 }
 
@@ -44,23 +45,25 @@
     
     text-decoration: none;
 
-    position: relative;
+    position: relative; /* to anchor any position: absolute child elements */
     width: 500px;
     height: 300px;
-    overflow: hidden;
+    overflow: hidden; /* any child element that overflows this element will be cut off */
 }
 
 .latest_button img
 {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: cover; /* crops image, fits image and keeps aspect ratio */
     object-position: center;
 }
 
 .overlay
 {
-    position: absolute;
+    position: absolute; /* works with position: relative */
+    /* relative [absolute] */
+    /* positioning elements makes it so that it positions absolute to the relative */
     bottom: 0;
     left: 0;
     width: 100%;
@@ -73,6 +76,9 @@
 .title 
 {
     position: absolute;
+    /* works with position: relative */
+    /* relative [absolute] */
+    /* positioning elements makes it so that it positions absolute to the relative */
     background-color: rgba(0, 0, 0, 0.5);
     padding: 10px 10px;
     font-size: 30px;
@@ -80,7 +86,7 @@
     bottom: 0;
     left: 0;
 
-    opacity: 1;
+    opacity: 1; /* only targets font */
 }
 
 .readnow 
@@ -93,7 +99,7 @@
     font-size: 30px;
     transition: 0.3s;
 
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); /* centers it */ 
 }
 
 /* Hover effect */

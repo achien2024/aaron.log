@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- applies the same viewing dimensions for each device/windows -->
+
+    <!-- website name -->
+
+    <title>
+        Logs by Aaron
+    </title>
+
+    <link
+        rel = "stylesheet";
+        href = "CSS/blog_header.css"
+    >
+
+    <link
+        rel = "stylesheet";
+        href = "CSS/blog_contact.css"
+    >
+
+    <link
+        rel = "stylesheet";
+        href = "CSS/blog_article.css"
+    >
+
+    <script src = "JS/hamburger.js" defer></script>
+</head>
+
+<body>
+    <!-- header for the website -->
+    <!-- bh_left bh_mid bh_right -->
+    <!-- bh_left - image Aaron Chien -->
+    <!-- bh_mid - Aaron.log -->
+    <!-- bh_right - bh_menu_icon explore links -->
+    <div
+        class = "blog_header"
+    >
+        <div
+            class = "bh_left"
+        >
+            <img
+                class = "image"
+                src = 'main_imgs/log.png'
+            >
+            <p class = "name">
+                Aaron Chien
+            </p>
+        </div>
+        <div
+            class = "bh_mid"
+        >
+            <a
+                class = "home_links"
+                href = index.html
+            >
+                Aaron.log
+            </a>
+        </div>
+
+        <div
+            class = "bh_right"
+        >
+            <!-- code to create a hamburger link logo -->
+            <!-- using div instead of button for more styling freedom -->
+            <div 
+                class="bh_menu_icon"
+                onclick="toggleMenu()"
+            >
+                &#9776;
+            </div>
+            <a
+                class = "home_links"
+                href = explore.html
+            >
+                Explore
+            </a>
+
+            <a
+                class = "home_links"
+                href = links.html
+            >
+                Links
+            </a>
+        </div>    
+    </div>
+    
+    <!-- Full-screen mobile menu overlay -->
+    <!-- mobileMenu -->
+    <!-- mobileMenu - mobile_menu_links -->
+    <!-- mobile_menu_links - explore links -->    
+    <div 
+        id="mobileMenu" 
+        class="mobile_menu_overlay" 
+        onclick="closeMenu(event)"
+    >
+        <div class="mobile_menu_links">
+            <a href=explore.html>Explore</a>
+            <a href=links.html>Links</a>
+        </div>
+    </div>
+
+    <!-- content for blog site -->
+    <!-- content -->
+    <!-- content - article blog blog -->
+    <!-- article - img -->
+    <!-- blog - p p img p... each p is a new line/paragraph -->
+    <!-- blog - p p p... each p is a work cited line -->
+    <div
+        class = "content"
+    >
+        <div
+            class="article"
+        >
+            <img class="article_img" src="blog6/main.jpeg">
+        </div>
+
+        <div
+            class="blog"
+        >
+            <p>
+                DATE: 2025-08-27
+            </p>
+
+            <p>
+                Investing, Index Funds & Portfolio Basics
+            </p>
+
+            <p>There are only two rules in investing:</p>
+            <ol>
+                <li>Don’t be stupid</li>
+                <li>Don’t forget rule number 1</li>
+            </ol>
+            
+            <p>
+                Our fight-or-flight response can panic when we see our assests dipping, hastily pressing that sell button, counting
+                the losses, and buying other assests non-declining. Whereas if we waited and played the long run, eventually, the assests
+                would rise again. 
+            </p>
+
+            <p>
+               Assests are like a star athlete, there will be times high and low performance. Through coaching and hard work, 
+               performance improves, and the teams that stay loyal enjoy the wins.
+            </p>
+
+            <p>
+                A good stock is often characterized just like that. If you look at the total stock market, you can see that 
+                even though there are some dips, the overall trend is rising. 
+            </p>
+
+            <img src="blog6/img4.avif">
+
+            <p>
+                I mentioned before to invest in index funds. Index funds are goodie bags of different companies. It’s a big 
+                soup mixture of all the good and bad into one serving. Instead of investing in one company, you invest in 
+                multiple, stretching your risk. Examples include <strong>SP500, NASDAQ, VTSAX, and Dow Jones</strong>.
+            </p>
+
+            <p>
+                Using Excel, we can create a hypothetical portfolio to evaluate the best way to allocate your shares among 
+                these funds, or any other stock/bond/ETF you choose.
+            </p>
+
+            <ol>
+                <li>
+                    <strong>Choose your index funds:</strong> This example uses SP500, NASDAQ, VTSAX, and Dow Jones. We will be downloading them as CSV data.
+                </li>
+
+                <li>
+                    <strong>Create a folder</strong> on your computer to store all CSV files and the program you will use (requires download).<br>
+                    <img src = "blog6/img1.png">
+
+                    <p>Use this program: <a href="https://github.com/achien2024/automation/blob/main/projects/stock_tracker/yearly_stock.py" target="_blank" rel="noopener noreferrer">yearly_stock.py</a> to input ticker symbols and download historical prices of these funds. This provides the last 50 years of each index fund’s price on January 1st (approximation of a share’s worth).</p>
+                    <ul>
+                        <li>If it doesn’t work, check your ticker symbol again, wait and try later, or use a different ticker symbol. Yahoo Finance can be used manually as well.</li>
+                        <img src = "blog6/img2.png">
+                        <li>Replace the “file path” with the actual file path to your folder.</li>
+                        <li>Open terminal and run:
+                            <pre><code>cd "path/to/your/folder" python yearly_stock.py</code></pre>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <strong>Import CSV files into Excel:</strong> Once downloaded, import each CSV into an Excel sheet. Organize your sheets and title them clearly.
+                    <img src="blog6/img3.png">
+                    <img src="blog6/img4.png">
+                    <ul>
+                        <li>Ensure the comma delimiter is selected.</li>
+                        <img src = "blog6/img5.png">
+                        <img src = "blog6/img6.png">
+                        <img src = "blog6/img7.png">
+                        <li>Copy and paste all data into a single sheet called <strong>Portfolio</strong>.</li>
+                    </ul>
+                    <img src = "blog6/img8.png">
+                </li>
+
+                <li>
+                    <strong>Create a covariance table:</strong> This compares the relative volatility of each stock with another, including itself.
+                    <ul>
+                        <li>If confused about selecting data, watch a tutorial such as "Excel Tutorial for Beginners."</li>
+                    </ul>
+                </li>
+
+                <img src = "blog6/img9.png">
+
+                <li>
+                    <strong>Create a table of weights and returns:</strong> This analyzes how much percentage of your shares should go into each stock.
+                    <ul>
+                        <li>Use <code>=SUM(weights)</code> as a formula to ensure total weights equal 1.</li>
+                    </ul>
+                </li>
+
+                <img src = "blog6/img10.png">
+
+                <li>
+                    <strong>Calculate expected return, variance, and standard deviation:</strong> This shows how much your portfolio might return and its relative risk.
+                    <ul>
+                        <li>Variance and standard deviation measure risk; the higher the number, the more volatility—meaning the portfolio may gain or lose significantly.</li>
+                    </ul>
+                </li>
+
+                <img src = "blog6/img11.png">
+                <img src = "blog6/img12.png">
+
+                <li>
+                    <strong>Optimize portfolio with Solver:</strong> In Excel (under Tools), use Solver to adjust weights subject to constraints:
+                    <ul>
+                        <li>Weights must be &ge; 0 and &le; 1.</li>
+                        <li>All weights must sum to 1.</li>
+                        <li>You can set the objective to maximize expected return or minimize variance (risk).</li>
+                    </ul>
+                </li>
+                <img src = "blog6/img13.png">
+                <img src = "blog6/img14.png">
+            </ol>
+
+            <p>
+                My portfolio, consisting of SP500, NASDAQ, VTSAX, and Dow Jones, has weights of:
+            </p>
+            
+            <ul>
+                <li>
+                    1 for NASDAQ for the highest return  
+                    <br>
+                    <img src="blog6/img15.png">
+                </li>
+                <li>
+                    0.7 VTSAX, 0.3 Dow Jones for the lowest risk  
+                    <br>
+                    <img src="blog6/img16.png">
+                </li>
+            </ul>
+            
+            <p>
+                Congratulations! You have made a portfolio for investing. Otherwise, you can simply copy my "safe" investment style. I
+                personally use the lowest risk portfolio for my ROTH IRA and the highest return for my brokerage. 
+            </p>
+        </div>
+    </div>
+
+    <!-- contact links -->
+    <!-- follow me contact_links -->
+    <!-- contact_links - insta linkedin bluesky-->
+    <div
+        class = "contact"
+    >
+        <p>
+            Follow Me
+        </p>
+        <div class="contact_links">
+            <a 
+                href="https://www.instagram.com/achien.zip/" 
+                target="_blank"
+            >
+                <img src="main_imgs/instagram.png">
+            </a> <!-- instagram -->
+        
+            <a 
+                href="https://www.linkedin.com/in/aaron-chien/" 
+                target="_blank"
+            >
+                <img src="main_imgs/linkedin.png">
+            </a> <!-- linkedin -->
+        
+            <a 
+                href="https://bsky.app/profile/aaronchien.bsky.social" 
+                target="_blank"
+            >
+                <img src="main_imgs/bluesky.png">
+            </a> <!-- bluesky -->
+        </div>
+    </div>
+</body>

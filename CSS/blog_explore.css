@@ -1,17 +1,13 @@
 @media (max-width: 900px)
 {
     .pages{
-        display: grid !important;
-        grid-template-columns: 1fr 1fr !important;
-        gap: 20px;
-        column-gap: 1px;
+        grid-template-columns: 1fr 1fr !important; /* makes the grid n x 2 rather than n x 3 */
+        gap: 20px; /* each row has 20px spacing between */
+        column-gap: 1px; /* each column has 1px spacing between */
     }
 
     .read_button {
-        width: 100%;
         max-width: 200px;
-        height: auto;
-        margin: 0 auto;
     }
 }
 
@@ -19,13 +15,11 @@
 {
     position: fixed; /* This makes the search bar stay fixed on the screen */
     top: 85px; /* Adjust this based on your header height */
-    left: 50%;
-    transform: translateX(-50%); /* This centers the search bar horizontally */
     z-index: 998; /* Ensures it's on top of other content */
 
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; /* turn it into a flex-box to make sure the searchbar is centered */
 
     width: 100%; /* Optional: makes the search bar full-width */
     background-color: white; /* Optional: gives the search bar a background */
@@ -35,8 +29,8 @@
 
 .bar 
 {
-    width: 35%;
-    height: 5vh;
+    width: 35%; /* % is % of the parent container, in this case, the body itself so the viewport */
+    height: 5vh; /* vh so x% of the viewport */
 
     border-radius: 999px;         /* makes it pill-shaped */
     border: 1px solid #ccc;       /* optional: subtle border */
@@ -48,14 +42,13 @@
 
 .pages
 {
-    margin-top: 170px;
+    display: grid; /* this div is a grid display */
+    grid-template-columns: auto auto auto; /* makes the grid n x 3 */
+    justify-content: space-evenly; /* applies to entire grid, the columns evenly spaced between itself */
+    justify-items: center; /* horizontally centers items in cell */
+    align-items: center; /* vertically centers items in cell */
 
-    justify-items: center; /* justify-content aligns the entire grid as a block to center */ 
-    /* justify-items aligns everything inside the grid horizontally */
-    align-items: center;
-    display: grid;
-    grid-template-columns: auto auto auto;
-    justify-content: space-evenly;
+    margin-top: 170px;
 
     row-gap: 20px;
 }
@@ -66,18 +59,13 @@
     
     text-decoration: none;
 
-    position: relative;
+    position: relative; /* makes this work with position: absolute */
+    /* relative container [absolute child] */
     width: 350px;
     height: 250px;
-    overflow: hidden;
-}
-
-.read_button img
-{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
+    overflow: hidden; /* anything that goes beyond the parent container gets cut off */
+    /* read_button container [img overlay [title read now]] */
+    /* anything from img, overlay and title, read now will be cut off if it spills out of read_button */ 
 }
 
 .overlay
@@ -85,11 +73,22 @@
     position: absolute;
     bottom: 0;
     left: 0;
+    /* start the overlay from the bottom left */
+    /* position goes to the bottom left of the relative container */
+
     width: 100%;
     height: 100%;
     background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
     color: white;
     transition: 0.3s;
+}
+
+.read_button img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* maintain aspect ratio, if it doesn't fit, crop it */
+    object-position: center;
 }
 
 .title 
@@ -101,8 +100,6 @@
     width: 100%;
     bottom: 0;
     left: 0;
-
-    opacity: 1;
 }
 
 .readnow 
@@ -115,7 +112,7 @@
     font-size: 30px;
     transition: 0.3s;
 
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); /* centers it */ 
 }
 
 /* Hover effect */

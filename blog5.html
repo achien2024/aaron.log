@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- applies the same viewing dimensions for each device/windows -->
+
+    <!-- website name -->
+
+    <title>
+        Logs by Aaron
+    </title>
+
+    <link
+        rel = "stylesheet";
+        href = "CSS/blog_header.css"
+    >
+
+    <link
+        rel = "stylesheet";
+        href = "CSS/blog_contact.css"
+    >
+
+    <link
+        rel = "stylesheet";
+        href = "CSS/blog_article.css"
+    >
+
+    <script src = "JS/hamburger.js" defer></script>
+</head>
+
+<body>
+    <!-- header for the website -->
+    <!-- bh_left bh_mid bh_right -->
+    <!-- bh_left - image Aaron Chien -->
+    <!-- bh_mid - Aaron.log -->
+    <!-- bh_right - bh_menu_icon explore links -->
+    <div
+        class = "blog_header"
+    >
+        <div
+            class = "bh_left"
+        >
+            <img
+                class = "image"
+                src = 'main_imgs/log.png'
+            >
+            <p class = "name">
+                Aaron Chien
+            </p>
+        </div>
+        <div
+            class = "bh_mid"
+        >
+            <a
+                class = "home_links"
+                href = index.html
+            >
+                Aaron.log
+            </a>
+        </div>
+
+        <div
+            class = "bh_right"
+        >
+            <!-- code to create a hamburger link logo -->
+            <!-- using div instead of button for more styling freedom -->
+            <div 
+                class="bh_menu_icon"
+                onclick="toggleMenu()"
+            >
+                &#9776;
+            </div>
+            <a
+                class = "home_links"
+                href = explore.html
+            >
+                Explore
+            </a>
+
+            <a
+                class = "home_links"
+                href = links.html
+            >
+                Links
+            </a>
+        </div>    
+    </div>
+    
+    <!-- Full-screen mobile menu overlay -->
+    <!-- mobileMenu -->
+    <!-- mobileMenu - mobile_menu_links -->
+    <!-- mobile_menu_links - explore links -->    
+    <div 
+        id="mobileMenu" 
+        class="mobile_menu_overlay" 
+        onclick="closeMenu(event)"
+    >
+        <div class="mobile_menu_links">
+            <a href=explore.html>Explore</a>
+            <a href=links.html>Links</a>
+        </div>
+    </div>
+
+    <!-- content for blog site -->
+    <!-- content -->
+    <!-- content - article blog blog -->
+    <!-- article - img -->
+    <!-- blog - p p img p... each p is a new line/paragraph -->
+    <!-- blog - p p p... each p is a work cited line -->
+    <div
+        class = "content"
+    >
+        <div
+            class = "article"
+        > <!-- center this later -->
+            <img class = "article_img" src = "blog5/main.jpg">
+        </div>
+
+        <div
+            class = "blog"
+        >
+            <p>
+                DATE: 2025-08-25
+            </p>
+
+            <p>
+                Intro to Investing
+            </p>
+
+            <p>
+                The FOMC meeting on 08/22/2025 released a statement explaining how monetary policy works and how they conclude
+                to their decisions. In short, they concluded that the monetary policies set by them are decided to help ensure
+                price stability and maximum employment. This is believed to be the 2% inflation mark. Additionally, there is 
+                a lag to monetary policy as effects of their decisions may not be seen until the next quarter at the earliest.
+                Unemployment and prices are largely affected by financial disturbances in the market; morever, maximum 
+                employment can be largely determined by nonmonetery factors and/or other contributions that changes over time.  
+            </p>
+            
+	        <p>
+                It’s said that the best time to invest was yesterday, and the second-best time to invest is right now.
+            </p>
+
+            <p>
+                As a 20-something-year-old who’s constantly thinking about his future and retirement, I am fearful of the 
+                limited supply of ability and money I’ll have. Having a cushion of support is why I started investing, and 
+                I’m breaking down the strategies on how I created my portfolio. 
+            </p>
+
+            <p>
+                This guide is for beginners or passive traders who want to routinely deposit money into an account and forget 
+                about it until retirement. 
+            </p>
+
+	        <p>
+                There’s an industry built on advisors, managers, and brokers on how to handle personal finances and make sure 
+                you get the best return. Given that you are a multi-million-dollar business or somewhat affiliated with one, 
+                sure, otherwise I see no reason to spend money on advice that could go into your account. 
+            </p>
+
+	        <p>
+                If you haven't read “The Simple Path to Wealth” by Collins, I highly recommend it. He dispels myths around 
+                investing, how simple it is, and how it’s better to start right now. I will be summarizing and using my own 
+                experiences to guide you.
+            </p>
+
+            <img src = "blog5/img1.jpg">
+
+	        <p>
+                I imagine the people who read this are students, young 20-somethings, or anyone who is simply put off by the 
+                finance and crypto bros of social media and thinks it’s all a scam. 
+            </p>
+
+            <p>
+                If you’re lucky, the company you work for offers a 401 (k)—the classic secured retirement plan. Amazing, you 
+                can stop here. If you’re smart, you would have an investment account, a ROTH IRA, and that 401k to spread out 
+                your money. That $1 sure can fly. 
+            </p>
+
+            <p>
+                A ROTH IRA is a type of investment account that anyone can open as long as they have earned income. The 
+                biggest benefit is that it is tax-free, meaning that when you want to take it out, Uncle Sam won’t take a 
+                piece of that pie, given that it has been untouched for more than 5 years and you are 60 years old. This is 
+                the ideal account for retirees, and how you can become a millionaire by then.
+            </p>
+
+            <p>
+                An investment account, otherwise known as a brokerage account, is also a savings account, but taxable whenever
+                you take money out. This is for your emergencies and paying off debt. 
+            </p>
+
+            <p>
+                Imagine you’re working part-time in high school. You start at age 16 as a junior, working 12 hours a week, 
+                earning $16 an hour, and for 2 years. You have earned $19,968, divided by 2 to pay for whatever you want to 
+                spend your hard-earned money on. You have $9,984 leftover, all pre-taxed. 
+            </p>
+
+            <img src = "blog5/img2.avif">
+
+            <p>
+                College tuition is $45k, you are given $15k in total for grants and scholarships, assuming middle-class. 
+                $9,984 barely covers tuition, and you take out loans. Meanwhile, while you are borrowing, you take that $9,984
+                and invest it into a safe portfolio that averages 12% growth per year.
+            </p>
+
+            <p>
+                ($9,984) * (1.12)^4 = $11,680
+            </p>
+            
+            <p>
+                Let’s say you work during college, $18 an hour, 8 hours a week for 4 years. You have earned $20,736.
+            </p>
+
+            <p>
+                Assuming you spend $7k throughout all four years eating out, treating yourself, and paying random college dues,
+                you have $13,736 left pre-invested. 
+            </p>
+
+            <p>
+                Not all will be invested simultaneously, but you deposit that money as soon as possible, earning you around $17,000. 
+            </p>
+
+            <p>
+                So instead of paying an increasing debt of 30k that grows 5% per year, you are paying around $2k.
+            </p>
+
+            <p>
+                This is just one classic example for anyone seeing the benefit of investing early, but you can use your 
+                investments to pay off emergency bills when the time comes.
+            </p>
+
+            <p>
+                How can I start? Which broker should I use? How do I create my portfolio?
+            </p>
+
+            <p>
+                Vanguard has been the go-to broker for anyone looking to get started. It’s easy to use and reliable, and it 
+                goes the extra mile of guiding you on how to buy and sell. It makes the scary things simple. Creating a 
+                portfolio is much more complicated, especially by yourself, but a mixture of index funds is generally the 
+                safest. 
+            </p>
+
+            <img src = "blog5/img3.png">
+        </div>
+
+        <div
+            class = "blog"
+        >
+            <ul>
+                <li><strong>Federal Reserve Board</strong> “Review of Monetary Policy Strategy, Tools, and Communications”<em> Federal Reserve</em>, <a href = "https://www.federalreserve.gov/monetarypolicy/monetary-policy-strategy-tools-and-communications-statement-on-longer-run-goals-monetary-policy-strategy-2025.htm" target = "_blank"> https://www.federalreserve.gov/monetarypolicy/monetary-policy-strategy-tools-and-communications-statement-on-longer-run-goals-monetary-policy-strategy-2025.htm </a></li>
+                <li><strong>MGMT 1B, ECON 160</strong> <em>UCLA</em>.</li>
+            </ul>          
+        </div>
+    </div>
+
+    <!-- contact links -->
+    <!-- follow me contact_links -->
+    <!-- contact_links - insta linkedin bluesky-->
+    <div
+        class = "contact"
+    >
+        <p>
+            Follow Me
+        </p>
+        <div class="contact_links">
+            <a 
+                href="https://www.instagram.com/achien.zip/" 
+                target="_blank"
+            >
+                <img src="main_imgs/instagram.png">
+            </a> <!-- instagram -->
+        
+            <a 
+                href="https://www.linkedin.com/in/aaron-chien/" 
+                target="_blank"
+            >
+                <img src="main_imgs/linkedin.png">
+            </a> <!-- linkedin -->
+        
+            <a 
+                href="https://bsky.app/profile/aaronchien.bsky.social" 
+                target="_blank"
+            >
+                <img src="main_imgs/bluesky.png">
+            </a> <!-- bluesky -->
+        </div>
+    </div>
+</body>

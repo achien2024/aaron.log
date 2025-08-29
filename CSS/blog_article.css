@@ -43,14 +43,15 @@
     max-width: 100%;
 }
 
-.blog img
+.blog img 
 {
-    min-width: 300px;
-    width: 50%;
-    display: block; /* makes it take up an entire line */ 
-    margin: 30px auto;         /* centers image horizontally + adds spacing */
-    object-fit: cover;         /* optional: ensures image fills nicely */
-    border-radius: 10px;  
+    max-width: 100%;      /* fits container width without overflowing */
+    height: auto;         /* keeps aspect ratio */
+    display: block;       /* ensures it starts on a new line */
+    margin: 30px auto;    /* centers and adds spacing */
+    border-radius: 10px;
+    object-fit: contain;   /* optional: fits image fully instead of cropping */
+    min-width: auto;       /* remove the 300px minimum */
 }
 
 ul 
